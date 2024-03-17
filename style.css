@@ -1,0 +1,425 @@
+body {
+    background-color: rgb(242, 242, 242);
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 0 10px 10px 0; /* Rounded corners */
+
+}
+
+
+main{
+    margin: 20px 0 20px 200px;
+}
+.nav-links {
+    /* margin: 0 20px; */
+
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 40px;
+    
+}
+
+.nav-links li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #000000, #252525, #333); ;
+    color: #fff;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    /* position: fixed; */
+    font-size: 0.9rem;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+}
+.profile-image img {
+    width: 75px; /* Adjust size as needed */
+    height: 75px;
+    border-radius: 50%; /* Make it circular */
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    /* align-self: flex-end; */
+    
+    
+}
+
+#greetings{
+    background-color: white;
+    width: 500px; /* Adjust size as needed */
+    height: 180px;
+    border-radius: 10px;
+    padding: 20px;
+     border: 1px solid #ccc;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    border-right: none;
+    margin-right: 125px;
+    
+}
+.hello{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 800;
+    /* margin: 10px; */
+
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.second{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container-borrowedbooks{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+width: 400px;
+
+}
+
+.borrow{
+    width: 400px;
+     /* Adjust size as needed */
+    /* height: 30px; */
+     max-height: 50px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+     
+     display: flex;
+     justify-content: space-between;
+}
+#books{
+    background-color: white;
+    width: 150px; /* Adjust size as needed */
+    height: 180px;
+    border-radius: 10px;
+    padding: 20px;
+     border: 1px solid #ccc;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+    border-right: none;
+}
+
+#books:hover{
+    transform: rotate(5deg);
+}
+#member:hover{
+    transform: rotate(5deg);
+}
+
+#member{
+    background-color: #333;
+    color: #fff;
+    width: 200px; /* Adjust size as needed */
+    height: 180px;
+    border-radius: 10px;
+    padding: 20px;
+     border: 1px solid #cccccc00;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+    border-right: none;
+}
+.total_books span{
+    font-size: 2.5rem;
+}
+.sub{
+    font-size: 0.9rem;
+font-weight: 400;
+}
+
+
+
+.logo{
+
+    /* font-family: 'PlayFair Display'; */
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+
+
+/* for the greetings */
+
+
+.header {
+    display: flex;
+    /* text-align: left; */
+justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px 100px;
+   
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 780px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .cards {
+    display: flex;
+    font-size: 0.7rem;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 135px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 5px 10px;
+  }
+  
+  
+  
+  
+  
+
+
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    /* position: fixed; */
+    width: 400px;
+    aspect-ratio: 1;
+    background: #333;
+    border-radius: 50%;
+    animation: l1 25s infinite linear;
+    position: absolute;
+    right: -10px;
+    top: 400px;
+    z-index: -1;
+  }
+
+  .loader2 {
+    /* position: fixed; */
+    width: 200px;
+    aspect-ratio: 1;
+    background: #333;
+    border-radius: 50%;
+    animation: l2 10s infinite linear;
+    position: absolute;
+    right: 300px;
+    top: -10px;
+    transform: rotate(180deg);
+    z-index: -1;
+  }
+  
+  @keyframes l2 {
+    0% { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
+    20% { border-radius: 45% 55% 55% 45% / 60% 40% 60% 40%; }
+    40% { border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+    60% { border-radius: 30% 70% 70% 30% / 80% 20% 80% 20%; }
+    80% { border-radius: 20% 80% 80% 20% / 90% 10% 90% 10%; }
+    100% { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
+  }
+  @keyframes l1 {
+ 
+  12.5% {border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%}
+  25%   {border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%}
+  37.5% {border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%}
+  50%   {border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%}
+  62.5% {border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%}
+  75%   {border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%}
+  87.5% {border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%}
+}
+  
+
+
+
+
+.search-bar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hello button{
+    width:auto;
+    height: 35px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.read{
+    height: 250px;
+    margin-left: 340px;
+    width: auto;
+    position: absolute;
+z-index: 1;
+}
+
+
+#borrow_section{
+    text-align: left;
+    margin-left: 35px ;
+    
+}
+
+
+.container-borrowedbooks{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+/* books.html ko lagi */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns */
+    gap: 10px; /* Adjust gap between cards */
+}
+
+
+.grid-container .card{
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+/* profile ko lagi */
+.profile-rectangle{
+   
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 20px;
+    border: 10px solid #fff; /* White border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+.profile-rectangle:hover{
+transform: scale(.5);
+    transform: rotate(-5deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* Shadow effect */
+
+
+}
+.container_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info{
+    text-align: left;
+    margin-left: 50px;
+
+}
